@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/favico.png" type="image/x-icon" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <div id="main">
+        <h1 id="title">Techwares Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to fillout survey form
+        </p>
+      </div>
+
+      <form action="#" id="survey-form" method="POST">
+        <div>
+          <label for="name" id="name-label"><h2>Name</h2></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name..."
+            required
+          />
+        </div>
+        <div>
+          <label for="email" id="email-label"><h2>Email</h2></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email..."
+            required
+          />
+        </div>
+        <div>
+          <label for="number" id="number-label"><h2>Number</h2></label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="10"
+            max="50"
+            placeholder="Enter your Number"
+          />
+        </div>
+        <div>
+          <label for="dropdown"
+            ><h2>What describes your current role?</h2></label
+          >
+          <select name="dropdown" id="dropdown">
+            <option value="Current-role" disabled>Select current Role</option>
+            <option value="part-time-job">Part-time-Job</option>
+            <option value="full-time=job">Full-Time-job</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+        <div id="radio">
+          <h2>
+            Please select your Gender
+          </h2>
+          <br />
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label><br />
+          <input
+            type="radio"
+            name="gender"
+            id="NotSpecified"
+            value="Not Specified"
+          />
+          <label for="NotSpecified">Not Specified</label><br />
+        </div>
+        <div id="checkbox">
+          <label for="checkbox"
+            ><h2>SKILL SET</h2>
+            <br />
+            <label for="Front-end"
+              ><input
+                type="checkbox"
+                name="Front-end"
+                id="Front-end"
+                value="Front-end"
+              />Front-end</label
+            ><br />
+            <label for="Back-end"
+              ><input
+                type="checkbox"
+                name="Back-end"
+                id="Back-end"
+                value="Back-end"
+              />Back-end</label
+            ><br />
+            <label for="DevOps"
+              ><input
+                type="checkbox"
+                name="DevOps"
+                id="DevOps"
+                value="DevOps"
+              />DevOps</label
+            ><br />
+          </label>
+        </div>
+        <div id="textarea">
+          <label for="textarea"
+            ><h2>Tell me about Yourself</h2><textarea
+              name="textarea"
+              id="_textarea"
+              cols="70"
+              rows="10"
+              placeholder="Tell me about yourself..."
+            ></textarea
+          ></label>
+        </div>
+        <div id="submitbutton"><button type="submit" id="submit">Submit</button></div>
+      </form>
+    </div>
+  </body>
+</html>
